@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&family=Raleway:wght@100;400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Raleway, sans-serif;
+  background-color: rgb(253, 230, 138);
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Paytone One', sans-serif;
+}
+p {
+  width: 80ch;
+  max-width: 100%;
+  font-size: 1em;
+  line-height: calc(1ex / 0.32);
+  margin: calc(1ex / 0.32) 0;
+  text-align: justify;
+  hyphens: auto;
+}
+a:hover {
+  background-color: rgb(254, 243, 199);
+}
+
+.hex {
+  width: 416px;
+  height: 240px;
+  display: inline-block;
+}
+.hex:before {
+  content: " ";
+  width: 0; height: 0;
+  border-bottom: 120px solid;
+  border-color: inherit;
+  border-left: 208px solid transparent;
+  border-right: 208px solid transparent;
+  position: absolute;
+  top: -120px;
+}
+.hex:after {
+  content: "";
+  width: 0;
+  position: absolute;
+  bottom: -120px;
+  border-top: 120px solid;
+  border-color: inherit;
+  border-left: 208px solid transparent;
+  border-right: 208px solid transparent;
+}

@@ -13,10 +13,10 @@
 	class="hex rotate-[45deg] bg-amber-100 border-amber-100 print:border-white absolute top-0 left-20 z-0"
 />
 
-<div class="p-10 relative z-50">
+<div class="p-3 md:p-10 relative z-50">
 	<h1 class="text-6xl md:text-9xl mb-9 py-9 border-b-4 border-green-600">Rob Newton</h1>
 	<div class="flex flex-wrap align-top">
-		<div class="w-1/3">
+		<div class="w-full md:w-1/3">
 			<SectionHeader title="Links" icon="links" />
 			<ul class="ml-9 pb-4">
 				<li>
@@ -50,7 +50,7 @@
 			/>
 
 			<SectionHeader title="Skills" icon="skills" />
-			<ul class="ml-10 columns-1 md:columns-3 mb-6">
+			<ul class="ml-10 columns-2 md:columns-3 mb-6">
 				{#each skills as skill}
 					<li class="pl-2 mb-1 w-32 bg-gray-100/30 hover:bg-amber-100">{skill}</li>
 				{/each}
@@ -63,7 +63,7 @@
 				includeEmbelishments={false}
 			/>
 		</div>
-		<div class="flex-1 ml-4 pl-6 border-l-2 border-green-600">
+		<div class="flex-1 max-w-full ml-4 pl-6 border-l-2 border-green-600">
 			<Jobs jobs={data.jobs} title="Experience" icon="experience" includeEmbelishments={true} />
 		</div>
 	</div>

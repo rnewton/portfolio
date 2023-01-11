@@ -24,6 +24,10 @@ a:hover {
   background-color: rgb(254, 243, 199);
 }
 
+.mr--12 {
+  margin-right: -50%;
+}
+
 .hex {
   width: 416px;
   height: 240px;
